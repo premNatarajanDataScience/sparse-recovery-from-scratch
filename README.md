@@ -30,6 +30,23 @@ $$\frac{m}{k} = \frac{20}{5} = 4$$
 
 to empirically observe its effects on recovery success and to test the hypothesis that **recovery success scales more positively with higher `m/k` ratios**.
 
+## Baseline Trials (n=50, m=20, k=5, m/k=4)
+
+| Trial | Positions Correct | Residual | Error |
+|-------|-------------------|----------|-------|
+| 1     | 4/5                | 6.22     | 1.26  |
+| 2     | 3/5                | 2.41     | 0.74  |
+| 3     | 2/5                | 1.01     | 0.60  |
+| 4     | 5/5                | 0.63     | 0.18  |
+| 5     | 4/5                | 8.57     | 1.74  |
+| 6     | 4/5                | 5.96     | 1.36  |
+| 7     | 5/5                | 0.51     | 0.10  |
+| 8     | 3/5                | 0.18     | 0.14  |
+| 9     | 2/5                | 2.96     | 2.15  |
+| 10    | 4/5                | 2.50     | 0.57  |
+
+**Average: 3.6/5 positions correct (72%)**
+
 ## Next Steps
 
 - Systematic variation of `m`, `k`, and `n` to empirically test the effect of the measurement-to-sparsity ratio on recovery reliability
