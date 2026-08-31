@@ -45,7 +45,7 @@ to empirically observe its effects on recovery success and to test the hypothesi
 | 9     | 2/5                | 2.96     | 2.15  |
 | 10    | 4/5                | 2.50     | 0.57  |
 
-**Average: 3.6/5 positions correct (72%)**
+**Average: 3.6/5 positions correct (72% recovery rate)**
 
 ## Next Steps
 
