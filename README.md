@@ -16,7 +16,7 @@ The initial implementation utilized raw, un-normalized dot-product results for b
 
 This was fixed by separating the selection functionality into two distinct roles. The latest implementation now uses normalized columns for candidate selection to avoid biases toward large magnitudes of little prominence, while a separate least-squares calculation uses the original un-normalized column to compute the correctly-scaled coefficient stored in `x_hat`.
 
-At `n=50`, `m=20`, `k=5` (measurement-to-sparsity ratio `m/k = 4`), the algorithm achieves partial recovery. Trials under the latest implementation (which can be run on the lab notebook) typically identify 2 out of 5 positions correctly. This appears to reflect a genuine limitation posed by our measurement-to-sparsity ratio, rather than an effect of implementation error.
+At `n=50`, `m=20`, `k=5` (measurement-to-sparsity ratio `m/k = 4`), the algorithm achieves partial recovery. Trials under the latest implementation (which can be run on the lab notebook) identify a mean of 3.6 out of 5 positions correctly (table shown before "Next Steps). This appears to reflect a genuine limitation posed by our measurement-to-sparsity ratio, rather than an effect of implementation error.
 
 Compressed sensing theory (the Candès–Tao **Restricted Isometry Property**) states that reliable recovery generally requires:
 
