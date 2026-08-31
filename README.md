@@ -28,7 +28,7 @@ Further tests should likely test varying the `m/k` ratio across a range both abo
 
 $$\frac{m}{k} = \frac{20}{5} = 4$$
 
-to empirically observe its effects on recovery success and to test the hypothesis that **recovery success scales more positively with higher `m/k` ratios**.
+to empirically observe its effects on recovery success and to test the hypothesis that recovery success scales more positively with higher `m/k` ratios.
 
 ## Baseline Trials (n=50, m=20, k=5, m/k=4)
 
