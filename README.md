@@ -47,6 +47,8 @@ to empirically observe its effects on recovery success and to test the hypothesi
 
 **Average: 3.6/5 positions correct (72% recovery rate)**
 
+An interesting and rather counterintuitive observation here is that mean error of x_hat from x_true does not appear empirically to have a negative correlation with the number of positions correct. This is another aspect worth examining in the broader context of determining how recovery success rates scale. 
+
 ## Next Steps
 
 - Systematic variation of `m`, `k`, and `n` to empirically test the effect of the measurement-to-sparsity ratio on recovery reliability
