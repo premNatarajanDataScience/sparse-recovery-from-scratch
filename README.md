@@ -32,7 +32,7 @@ to empirically observe its effects on recovery success and to test the hypothesi
 
 ## Baseline Trials (n=50, m=20, k=5, m/k=4)
 
-![Recovery Rate Trial Results: Recovery Per Trial and Error vs Positions Correct] (recovery_trial_results.png)
+![Recovery Rate Trial Results: Recovery Per Trial and Error vs Positions Correct](recovery_trial_results.png)
 
 An interesting and rather counterintuitive observation here is that mean error of x_hat from x_true does not appear empirically to have a negative correlation with the number of positions correct. This is another aspect worth examining in the broader context of determining how recovery success rates scale. 
 
