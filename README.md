@@ -16,7 +16,7 @@ The initial implementation utilized raw, un-normalized dot-product results for b
 
 This was fixed by separating the selection functionality into two distinct roles. The latest implementation now uses normalized columns for candidate selection to avoid biases toward large magnitudes of little prominence, while a separate least-squares calculation uses the original un-normalized column to compute the correctly-scaled coefficient stored in `x_hat`.
 
-At `n=50`, `m=20`, `k=5` (measurement-to-sparsity ratio `m/k = 4`), the algorithm achieves partial recovery. Across 100 trials under the latest implementation, the algorithm identified an average of 3.64 out of 5 positions correctly (72.8%), ranging from 1/5 to 5/5 across individual trials (see baseline data below). This appears to reflect a genuine limitation posed by our measurement-to-sparsity ratio, rather than an effect of implementation error.
+At `n=50`, `m=20`, `k=5` (measurement-to-sparsity ratio `m/k = 4`), the algorithm achieves partial recovery. Across 100 trials under the latest implementation, the algorithm identified an average of 3.6 out of 5 positions correctly (72.0%), ranging from 1/5 to 5/5 across individual trials (see baseline data below). This appears to reflect a genuine limitation posed by our measurement-to-sparsity ratio, rather than an effect of implementation error.
 
 Compressed sensing theory (the Candès–Tao Restricted Isometry Property) states that reliable recovery generally requires:
 
@@ -32,9 +32,9 @@ to empirically observe its effects on recovery success and to test the hypothesi
 
 ## Baseline Trials (n=50, m=20, k=5, m/k=4)
 
-![Recovery Rate Trial Results: Recovery Per Trial and Error vs Positions Correct](recovery_trial_results.png)
+![Recovery Rate Trial Results: Recovery Per Trial and Error vs Positions Correct](recovery_trial_results_with_correlation.png)
 
-An interesting and rather counterintuitive observation here is that mean error of x_hat from x_true does not appear empirically to have a negative correlation with the number of positions correct. This is another aspect worth examining in the broader context of determining how recovery success rates scale. 
+An interesting and rather counterintuitive observation here is that mean error of x_hat from x_true does not appear empirically to have a strong negative correlation with the number of positions correct. This is another aspect worth examining in the broader context of determining how recovery success rates scale. 
 
 ## Next Steps
 
