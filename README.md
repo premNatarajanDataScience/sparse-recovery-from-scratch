@@ -6,7 +6,7 @@ From-scratch implementation of sparse signal recovery algorithms (matching pursu
 
 Given `n` unknowns, of which a number `k` are nonzero, and `m` indirect linear measurements (`m < n`), can we recover the true sparse signal `x_true` using only the measurement matrix `A` and the observed results:
 
-$$y = A \, x_{true}$$
+$$y = A x_{true}$$
 
 ## Current Status
 
