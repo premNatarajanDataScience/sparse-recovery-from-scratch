@@ -12,7 +12,7 @@ $$y = A x_{true}$$
 
 **Matching pursuit: successfully implemented and working.**
 
-The initial implementation utilized raw, un-normalized dot-product results for both candidate selection and coefficient estimation. As such, there was a bias toward the selection of columns with large magnitudes regardless of true alignment, and incorrectly-scaled coefficients caused the residual to grow instead of shrink across rounds. This lead to significant divergence between the empirical and true sparse signals.
+The initial implementation utilized raw, un-normalized dot-product results for both candidate selection and coefficient estimation. As such, there was a bias toward the selection of columns with large magnitudes regardless of true alignment, and incorrectly-scaled coefficients caused the residual to grow instead of shrink across rounds. This led to a significant divergence between the empirical and true sparse signals.
 
 This was fixed by separating the selection functionality into two distinct roles. The latest implementation now uses normalized columns for candidate selection to avoid biases toward large magnitudes of little prominence, while a separate least-squares calculation uses the original un-normalized column to compute the correctly-scaled coefficient stored in `x_hat`.
 
