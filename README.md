@@ -1,4 +1,4 @@
-# sparse-recovery-from-scratch
+# Sparse Recovery From Scratch
 
 From-scratch implementation of sparse signal recovery algorithms (matching pursuit, LASSO). We explore how a sparse signal can be reconstructed in conditions where there are fewer measurements than unknowns.
 
