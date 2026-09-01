@@ -22,7 +22,7 @@ Compressed sensing theory (the Candès–Tao Restricted Isometry Property) state
 
 $$m = O\left(k \cdot \log\left(\frac{n}{k}\right)\right)$$
 
-As such, we can presume that the number of unknowns is a **comparatively weak factor** in the success of our recovery, as `n` only grows logarithmically.
+As such, we can presume that the number of unknowns is a comparatively weak factor in the success of our recovery, as `n` only grows logarithmically.
 
 Further tests should likely test varying the `m/k` ratio across a range both above and below our current value:
 
